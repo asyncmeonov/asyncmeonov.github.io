@@ -1,24 +1,4 @@
-baseURL = 'https://achosimeonov.com/'
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Angel Simeonov'
-theme = 'lynx'
-
-enableEmoji = false
-disableKinds = ["taxonomy", "term"]
-
-[params.author]
-  name = "Angel Simeonov"
-  headline = "I make games"
-  image = "author.jpg"
-  links = [
-    { link = { href = "https://github.com/jpanther/lynx/blob/stable/README.md", text = "View the readme", icon = "github" } },
-    { link = { href = "styles/", text = "All the link styles", target = "_self" } },
-    { github = "https://github.com/jpanther/lynx" },
-    { x = "https://x.com/jpanther" }]
-
-[markup.highlight]
-  noClasses = false
-
-[markup.goldmark]
-[markup.goldmark.renderer]
-  unsafe = true
+title = 'My New Hugo Site'
+theme = 'simple-links'
