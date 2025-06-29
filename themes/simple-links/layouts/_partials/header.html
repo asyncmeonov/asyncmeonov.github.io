@@ -1,10 +1,4 @@
-<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Rosemary_in_bloom.JPG" alt="Girl in a jacket" width="250" height="250">
-<h1>{{ site.Title }}</h1>
-<h2>{{ .Site.Params.Subtitle }}</h2>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }} -->
-
-	<!-- <div class="top-0 flex flex-col col-span-12 gap-6 p-6 overflow-y-auto lg:h-screen lg:sticky lg:col-span-6 xl:col-span-5 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pr-0 xl:pr-0 2xl:pr-0"> -->
-	<div class="top-0 flex flex-col col-span-12 gap-3 p-6 overflow-y-auto lg:h-screen lg:sticky lg:col-span-6 xl:col-span-5 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-7 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pr-0 xl:pr-0 2xl:pr-0">
+<div class="top-0 flex flex-col col-span-12 gap-3 p-6 overflow-y-auto lg:h-screen lg:sticky lg:col-span-6 xl:col-span-5 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-7 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pr-0 xl:pr-0 2xl:pr-0">
 		<div class="flex flex-col items-center justify-center md:flex-row">
 			{{- with resources.Get "images/profile.gif" }}
 				<img src="{{ .RelPermalink }}" alt="Acho" class="pfp-m md:pfp"/>
@@ -13,7 +7,7 @@
         <div class="flex flex-col items-center justify-center :flex-row">
                    	<div class="flex flex-col items-center justify-center text-xl md:items-center md:justify-center md:text-xl xl:text-xl">
 								<span style="font-size:2em;" class="flex items-center gap-[0.3em] font-extrabold">{{ site.Title}}</span>
-								<span style="font-size:1.5em;"class="font-medium opacity-60">I make games</span>
+								<!-- <span style="font-size:1.5em;"class="font-medium opacity-60">I make games</span> -->
 					</div>
 					</div>
 					<div class="px-5 text-xl text-left md:text-left md:text-xl lg:text-xl xl:text-xl md:px-0">
@@ -21,7 +15,6 @@
 					<div>
 						<br>
 						<div>This website is an uncategorised and chronological feed of my work and hobbies.</div>
-						<br>
 						<div>It serves as a personal memorandum for everything that I have been excited for.</div>
 					</div>	
 				</div>
