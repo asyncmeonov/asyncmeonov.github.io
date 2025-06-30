@@ -1104,3 +1104,13 @@ select {
   transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1)
 }
+
+.card-img {
+  width: 200px;
+  object-fit: cover;
+}
+
+/* .card-img:hover {
+  transition: .15s;
+  filter: brightness(105%);
+} */
