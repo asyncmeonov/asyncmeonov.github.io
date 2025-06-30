@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://achosimeonov.com/'
 languageCode = 'en-us'
 title = 'Angel Simeonov'
 theme = 'simple-links'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
