@@ -1,7 +1,19 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
-{{ end }}
+{{ .Content }}
+{{ range site.RegularPages }}
+<a
+  style="padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"
+  class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]"
+  href=" {{ .Params.Href}} "
+  target="_blank">
+  <div class="flex flex-col shrink-0" style="flex-basis: 150px;">
+    {{ with .Resources.GetMatch "cover.*" }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+    {{ end }}
+  </div>
+  <div class="flex flex-col">
+    <h2 class="font-bold">{{ .LinkTitle }} <span class="font-medium opacity-40">{{ .Params.Tags }}</span></h2>
+    <p class="opacity-50 font-medium mt-[0.1em]">{{ .Summary }}</p>
+  </div>
+</a>
+{{ end }} {{ end }}
