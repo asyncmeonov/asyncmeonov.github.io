@@ -1,8 +1,8 @@
 +++
 title = 'Moda Intergalactica'
-date = 2023-03-15T11:00:00-07:00
+date = 2023-06-01T11:00:00-07:00
 draft = false
-tags = ['red','green','blue']
+tags = ['ttrpg']
 href = 'https://www.drivethrurpg.com/en/product/443363/moda-intergalactica'
 +++
 
