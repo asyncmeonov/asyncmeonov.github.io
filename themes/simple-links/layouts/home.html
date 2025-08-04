@@ -1,19 +1,22 @@
 {{ define "main" }}
+{{partial "header.html"}}
+<div class="col-span-12 p-6 -mt-6 lg:col-span-6 xl:col-span-7 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pl-0 xl:pl-0 2xl:pl-0 md:-mt-12 lg:mt-0">
+        <div class="flex flex-col gap-6 text-base md:text-xl md:gap-6 lg:gap-7 xl:gap-8">
 {{ .Content }}
 {{ range site.RegularPages }}
-<a
-  style="padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"
-  class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]"
-  href=" {{ .Params.Href}} "
-  target="_blank">
-  <div class="flex flex-col shrink-0" style="flex-basis: 150px;">
-    {{ with .Resources.GetMatch "cover.*" }}
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
-    {{ end }}
-  </div>
-  <div class="flex flex-col">
-    <h2 class="font-bold">{{ .LinkTitle }} <span class="font-medium opacity-40">{{ .Params.Tags }}</span></h2>
-    <p class="opacity-50 font-medium mt-[0.1em]">{{ .Summary }}</p>
-  </div>
-</a>
+  <a
+    style="padding-left: 0px; padding-top: 0px; padding-bottom: 0px;"
+    class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]"
+    href=" {{ .Params.Href}} "
+    target="_self">
+    <div class="flex flex-col shrink-0" style="flex-basis: 150px;">
+      {{ with .Resources.GetMatch "cover.*" }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+      {{ end }}
+    </div>
+    <div class="flex flex-col">
+      <h2 class="font-bold">{{ .LinkTitle }} <span class="font-medium opacity-40">{{ .Params.Tags }}</span></h2>
+      <p class="opacity-50 font-medium mt-[0.1em]">{{ .Summary }}</p>
+    </div>
+  </a>
 {{ end }} {{ end }}
