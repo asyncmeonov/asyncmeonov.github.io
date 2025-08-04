@@ -1,7 +1,7 @@
 +++
 title = 'Къде да играем?'
 date = 2025-01-24T11:00:00-07:00
-draft = true
+draft = false
 tags = ['community']
 href = 'https://blog.achosimeonov.com/posts/where-to-play/'
 +++
